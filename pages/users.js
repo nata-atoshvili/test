@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import styles from './users.module.css'
 import '../app/globals.css'
 
@@ -19,7 +18,6 @@ const User = ({ firstName, lastName, image }) => (
 export default function Users() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
-  console.log('USERS PAGE');
 
   useEffect(() => {
     fetchUsersData()
